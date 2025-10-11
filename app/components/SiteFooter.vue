@@ -16,7 +16,7 @@
     </n-flex>
     <n-flex :size="4" class="text" align="center" vertical>
       <n-p depth="3">
-        <n-text depth="3" @click="jumpLink(linkData.github)">
+        <n-text depth="3" @click="jumpLink(metaData.project)">
           SiteStatus
         </n-text>
         Version {{ version }}
@@ -32,7 +32,7 @@
       </n-p>
       <n-p depth="3">
         Copyright &copy; 2020 - {{ new Date().getFullYear() }}
-        <n-text depth="3" @click="jumpLink(linkData.home)"> IMSYY </n-text>
+        <n-text depth="3" @click="jumpLink(metaData.author)"> IMSYY </n-text>
         <n-text
           v-if="siteIcp"
           depth="3"
@@ -53,6 +53,10 @@ const linkData = {
   github: "https://github.com/guangzhoueven",
   home: "https://home.guangzhoueven.dpdns.org",
   email: "mailto:10062132@qq.com",
+};
+const metaData = {
+  author: "https://imsyy.top",
+  project: "https://github.com/imsyy/site-status",
 };
 </script>
 
