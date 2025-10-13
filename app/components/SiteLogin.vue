@@ -37,7 +37,7 @@ const statusStore = useStatusStore();
 
 // 表单数据
 const formRef = ref<FormInst>();
-const formData = ref<{ password: string }>({ password: "" });
+const formData = ref<{ password: string }>({ password: "admin" });
 const formRules: FormRules = {
   password: {
     required: true,
