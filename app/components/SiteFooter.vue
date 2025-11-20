@@ -36,7 +36,7 @@
         <n-text
           v-if="siteIcp"
           depth="3"
-          @click="jumpLink('https://beian.miit.gov.cn/')"
+          @click="jumpLink('https://icp.gov.moe/?keyword=20256363/')"
         >
           | {{ siteIcp }}
         </n-text>
